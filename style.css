@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100&display=swap");
+body {
+  background-color: hsl(217, 54%, 11%);
+  font-family: "Outfit";
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+main {
+  max-width: 90em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.card {
+  background-color: hsl(216, 50%, 16%);
+  box-shadow: 0 0 50px black;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+}
+.container {
+  width: 88%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.container .description {
+  width: 100%;
+}
+.description p {
+  color: hsl(215, 51%, 70%);
+  font-weight: 400;
+}
+.description h2 {
+  color: white;
+  font-weight: 900;
+}
+.description h2:hover {
+  cursor: pointer;
+  color: hsl(178, 100%, 50%);
+}
+.container .img-equilibrium {
+  width: 21em;
+  border-radius: 10px;
+}
+.img-container {
+  position: relative;
+}
+.img-onhover {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  align-items: center;
+  left: 0;
+  background-color: hsla(178, 100%, 50%, 0.3);
+  border-radius: 10px;
+  opacity: 0;
+  cursor: pointer;
+}
+.img-onhover:hover {
+  opacity: 1;
+}
+
+.container .pricing {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid hsl(215, 32%, 27%);
+}
+.pricing .price {
+  display: flex;
+  align-items: center;
+}
+.price p {
+  color: hsl(178, 100%, 50%);
+  font-weight: bolder;
+  margin-left: 0.4em;
+}
+.pricing .time {
+  display: flex;
+  align-items: center;
+}
+.time p {
+  color: hsl(215, 51%, 70%);
+  margin-left: 0.4em;
+  font-weight: 400;
+}
+.container .profile {
+  display: flex;
+  margin-top: 0.4em;
+  width: 100%;
+  align-items: center;
+}
+.profile .avatar {
+  width: 2em;
+  border: 1px solid white;
+  border-radius: 20px;
+}
+.profile p {
+  color: hsl(215, 51%, 70%);
+  margin-left: 0.6em;
+  font-weight: 400;
+}
+.profile .profile-name {
+  font-weight: 600;
+  color: white;
+}
+.profile-name:hover {
+  cursor: pointer;
+  color: hsl(178, 100%, 50%);
+}
+@media screen and (max-width: 23em) {
+  main {
+    max-width: 23em;
+  }
+  .container {
+    width: 85%;
+  }
+  .container .img-equilibrium {
+    width: 19em;
+  }
+}
