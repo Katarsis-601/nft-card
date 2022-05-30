@@ -124,14 +124,22 @@ main {
   color: hsl(178, 100%, 50%);
 }
 .attribution {
+  position: fixed;
   background-color: hsl(216, 50%, 16%);
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
   box-shadow: 0 0 5px black;
   display: flex;
   text-align: center;
   padding: 20px;
   color: hsl(215, 51%, 70%);
+  opacity: 0;
+  transform: translateY(-25%);
+  transition: 0.5s;
+}
+.attribution:hover {
+  transform: translateY(0);
+  opacity: 1;
 }
 .attribution a {
   font-weight: bolder;
