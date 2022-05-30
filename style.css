@@ -3,9 +3,14 @@ body {
   background-color: hsl(217, 54%, 11%);
   font-family: "Outfit";
   display: flex;
-  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   margin: 0 auto;
   box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: inherit;
 }
 main {
   max-width: 90em;
@@ -64,6 +69,7 @@ main {
   border-radius: 10px;
   opacity: 0;
   cursor: pointer;
+  transition: opacity 0.35s;
 }
 .img-onhover:hover {
   opacity: 1;
@@ -115,6 +121,22 @@ main {
 }
 .profile-name:hover {
   cursor: pointer;
+  color: hsl(178, 100%, 50%);
+}
+.attribution {
+  background-color: hsl(216, 50%, 16%);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  box-shadow: 0 0 5px black;
+  display: flex;
+  text-align: center;
+  padding: 20px;
+  color: hsl(215, 51%, 70%);
+}
+.attribution a {
+  font-weight: bolder;
+}
+.attribution a:hover {
   color: hsl(178, 100%, 50%);
 }
 @media screen and (max-width: 23em) {
